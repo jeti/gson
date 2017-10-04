@@ -2,8 +2,11 @@ apply plugin: 'java-library'
 
 dependencies {
     compile 'com.google.code.gson:gson:2.8.2'
+    compile 'io.jeti:serialize:1.0.1'
     compile 'io.jeti:streams:1.0.0'
+    testCompile 'junit:junit:4.12'
 }
+
 
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
@@ -17,12 +20,12 @@ ext {
     libraryName = 'gson'
     artifact = 'gson'
 
-    libraryDescription = 'Some convenience wrappers which allow one to use Gsons with the jeti.io streams package.'
+    libraryDescription = 'Some convenience wrappers which interface Gson with jeti.io packages.'
 
     siteUrl = 'https://github.com/jeti/gson'
     gitUrl = 'https://github.com/jeti/gson.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.1'
 
     developerId = 'jeti'
     developerName = 'Matthew Holzel'
